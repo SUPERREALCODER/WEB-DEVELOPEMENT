@@ -3,36 +3,48 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Column Layout Methods</title>
+  <title>CSS Box Model</title>
   <style>
+    div {
+      height: 200px;
+      width: 200px;
+    }
+
     p {
-      font-weight: 700;
       margin: 0;
     }
 
-    li {
-      list-style: none;
+    #first {
+      background-color: cadetblue;
+      padding: 20px;
+      border: 10px solid black;
     }
 
-    .container {
-      padding: 10px;
+    #second {
       background-color: gold;
-      display: flex;
-      gap: 10px;
+      border: solid black;
+      border-width: 20px 10px;
+      margin-left: 260px;
+    }
+
+    #third {
+      background-color: indianred;
+      border: 10px solid black;
+      margin-left: 40px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <p>Page Layout Methods</p>
+  <div id="first">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+      id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+      dolor metus, laoreet ac convallis sit amet, efficitur sed dolor. </p>
+  </div>
+  <div id="second">
 
-    <li><a href="./html-table.html">HTML Table</a></li>
-    <li><a href="./inline-block.html">Inline-Block</li>
-    <li><a href="./absolute-position.html">Absolute Positioning</li>
-    <li><a href="./float.html">Float</li>
-    <li><a href="./flex.html">Flexbox</li>
+  </div>
+  <div id="third">
 
   </div>
 </body>
